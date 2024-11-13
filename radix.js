@@ -39,5 +39,4 @@ function radixSort(arr) {
   return arr;
 }
 
-// let rsArr = [902, 4, 7, 408, 29, 9637, 1556, 3556, 8157, 4386, 86, 593];
 module.exports = { getDigit, findPlace, radixSort };
