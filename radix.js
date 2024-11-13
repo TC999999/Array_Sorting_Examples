@@ -1,3 +1,4 @@
+// returns the digit at the specified index starting from the right
 function getDigit(num, pos = 0) {
   let numStr = num.toString();
   if (numStr[numStr.length - 1 - pos]) {
@@ -7,6 +8,7 @@ function getDigit(num, pos = 0) {
   }
 }
 
+//returns the greatest number of digits that a number in an array has
 function findPlace(arr) {
   let place = 0;
   for (let num of arr) {
@@ -17,6 +19,7 @@ function findPlace(arr) {
   return place - 1;
 }
 
+//returns a sorted array through radix sorting
 function radixSort(arr) {
   let loopNum = findPlace(arr);
   let buckets = [[], [], [], [], [], [], [], [], [], []];
@@ -36,4 +39,5 @@ function radixSort(arr) {
   return arr;
 }
 
-let rsArr = [902, 4, 7, 408, 29, 9637, 1556, 3556, 8157, 4386, 86, 593];
+// let rsArr = [902, 4, 7, 408, 29, 9637, 1556, 3556, 8157, 4386, 86, 593];
+module.exports = { getDigit, findPlace, radixSort };

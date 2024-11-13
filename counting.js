@@ -23,6 +23,8 @@ function countingSort(arr) {
   return finalArr;
 }
 
+module.exports = { makeCountArr, countingSort };
+
 // let csArr = [6, 3, 0, 6, 9, 6, 0, 6, 1, 7];
 // let csArr2 = [4, 2, 2, 8, 3, 3, 1];
 // let nums = [

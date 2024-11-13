@@ -12,10 +12,6 @@ function pivot(arr) {
   return count;
 }
 
-// let arr = [4, 2, 5, 3, 6];
-// let arr1 = [5, 4, 9, 10, 2, 20, 8, 7, 3];
-// let arr2 = [8, 4, 2, 5, 0, 10, 11, 12, 13, 16];
-
 function quickSort(arr) {
   if (arr.length > 1) {
     let pivVal = arr[0];
@@ -30,4 +26,4 @@ function quickSort(arr) {
   }
 }
 
-// let arr3 = [4, 20, 12, 10, 7, 9];
+module.exports = { pivot, quickSort };
