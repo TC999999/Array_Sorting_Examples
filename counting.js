@@ -1,3 +1,4 @@
+//makes an array of zeroes with a length equal to the inputted base
 function makeCountArr(base) {
   let countArr = [];
   for (let i = 0; i <= base; i++) {
@@ -6,6 +7,17 @@ function makeCountArr(base) {
   return countArr;
 }
 
+// First, makes an the counting array of zeros with a
+// length of the maximum number of the array.
+// Next, counts the number of times each number in the inputted
+// array appears and replace the value at the respective index
+// with the counted appearances.
+// Next, replace each value in the count array with the sum of its
+// previous value and its own value until the last value is equal
+// to the length of the original array.
+// Finally, insert each value of the original array into a new array
+// based on the value of its index in the counting array and
+// return a sorted array
 function countingSort(arr) {
   let max = Math.max(...arr);
   let countArr = makeCountArr(max);

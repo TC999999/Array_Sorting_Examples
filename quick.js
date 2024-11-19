@@ -1,3 +1,6 @@
+// pivots all values in the array that are less than the leftmost
+// value to the left side of the array. Returns the number of
+// values that were moved to the left side.
 function pivot(arr) {
   let pIndex = arr[0];
   let count = 0;
@@ -12,6 +15,10 @@ function pivot(arr) {
   return count;
 }
 
+// continously pivots the array and slices the right and left sides
+// of the pivot value (the first value of the array). Recursively
+// pivots those sliced arrays until we get a final sorted array.
+// Returns the sorted array
 function quickSort(arr) {
   if (arr.length > 1) {
     let pivVal = arr[0];

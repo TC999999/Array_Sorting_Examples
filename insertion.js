@@ -1,3 +1,7 @@
+// continously goes towards the right side of the array, and if
+// the current value is less than the value to its left, the values
+// are swapped. This continues until the array is sorted and returns
+// the sorted array
 function insertionSort(arr) {
   for (let i = 1; i <= arr.length - 1; i++) {
     let curr = arr[i];

@@ -14,19 +14,16 @@ describe("insertion sorting", function () {
     ];
   });
 
-  test("first array sorted", function () {
-    let sortArr1 = insertionSort(arr1);
-    expect(sortArr1).toEqual([0, 0, 1, 3, 6, 6, 6, 6, 7, 9]);
+  test("insertionSort(): first array sorted", function () {
+    expect(insertionSort(arr1)).toEqual([0, 0, 1, 3, 6, 6, 6, 6, 7, 9]);
   });
 
-  test("second array sorted", function () {
-    let sortArr2 = insertionSort(arr2);
-    expect(sortArr2).toEqual([1, 2, 2, 3, 3, 4, 8]);
+  test("insertionSort(): second array sorted", function () {
+    expect(insertionSort(arr2)).toEqual([1, 2, 2, 3, 3, 4, 8]);
   });
 
-  test("third array sorted", function () {
-    let sortArr3 = insertionSort(arr3);
-    expect(sortArr3).toEqual([
+  test("insertionSort(): third array sorted", function () {
+    expect(insertionSort(arr3)).toEqual([
       2, 3, 3, 4, 4, 4, 5, 23, 32, 32, 34, 34, 35, 43, 67, 75, 232, 232, 453,
       546, 4342,
     ]);

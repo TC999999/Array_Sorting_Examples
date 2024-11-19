@@ -1,5 +1,8 @@
+// sorts an array of numbers by continuosuly swapping values
+// from the start of the array with values that are less than
+// it to the right; of the array. If no values are swapped,
+// the sorting is done
 function bubbleSort(arr) {
-  let count = 0;
   for (let i = arr.length - 1; i >= 0; i--) {
     let j = 0;
     let swapped = false;
@@ -11,7 +14,6 @@ function bubbleSort(arr) {
         swapped = true;
       }
       j++;
-      count++;
     }
     if (!swapped) break;
   }

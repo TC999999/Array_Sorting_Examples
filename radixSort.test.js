@@ -1,6 +1,6 @@
 let { getDigit, findPlace, radixSort } = require("./radix");
 
-describe("merge sorting", function () {
+describe("radix sorting", function () {
   let arr1;
   let arr2;
   let arr3;
@@ -27,19 +27,16 @@ describe("merge sorting", function () {
     expect(findPlace(arr3)).toEqual(3);
   });
 
-  test("first array sorted", function () {
-    let sortArr1 = radixSort(arr1);
-    expect(sortArr1).toEqual([0, 0, 1, 3, 6, 6, 6, 6, 7, 9]);
+  test("radixSort(): first array sorted", function () {
+    expect(radixSort(arr1)).toEqual([0, 0, 1, 3, 6, 6, 6, 6, 7, 9]);
   });
 
-  test("second array sorted", function () {
-    let sortArr2 = radixSort(arr2);
-    expect(sortArr2).toEqual([1, 2, 2, 3, 3, 4, 8]);
+  test("radixSort(): second array sorted", function () {
+    expect(radixSort(arr2)).toEqual([1, 2, 2, 3, 3, 4, 8]);
   });
 
-  test("third array sorted", function () {
-    let sortArr3 = radixSort(arr3);
-    expect(sortArr3).toEqual([
+  test("radixSort(): third array sorted", function () {
+    expect(radixSort(arr3)).toEqual([
       2, 3, 3, 4, 4, 4, 5, 23, 32, 32, 34, 34, 35, 43, 67, 75, 232, 232, 453,
       546, 4342,
     ]);

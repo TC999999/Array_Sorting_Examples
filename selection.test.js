@@ -1,6 +1,6 @@
 let { selectionSort } = require("./selection");
 
-describe("merge sorting", function () {
+describe("selection sorting", function () {
   let arr1;
   let arr2;
   let arr3;
@@ -14,19 +14,16 @@ describe("merge sorting", function () {
     ];
   });
 
-  test("first array sorted", function () {
-    let sortArr1 = selectionSort(arr1);
-    expect(sortArr1).toEqual([0, 0, 1, 3, 6, 6, 6, 6, 7, 9]);
+  test("selectionSort(): first array sorted", function () {
+    expect(selectionSort(arr1)).toEqual([0, 0, 1, 3, 6, 6, 6, 6, 7, 9]);
   });
 
-  test("second array sorted", function () {
-    let sortArr2 = selectionSort(arr2);
-    expect(sortArr2).toEqual([1, 2, 2, 3, 3, 4, 8]);
+  test("selectionSort(): second array sorted", function () {
+    expect(selectionSort(arr2)).toEqual([1, 2, 2, 3, 3, 4, 8]);
   });
 
-  test("third array sorted", function () {
-    let sortArr3 = selectionSort(arr3);
-    expect(sortArr3).toEqual([
+  test("selectionSort(): third array sorted", function () {
+    expect(selectionSort(arr3)).toEqual([
       2, 3, 3, 4, 4, 4, 5, 23, 32, 32, 34, 34, 35, 43, 67, 75, 232, 232, 453,
       546, 4342,
     ]);

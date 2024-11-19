@@ -14,24 +14,20 @@ describe("count sorting", function () {
     ];
   });
 
-  test("make counting arr", function () {
-    let cArr = makeCountArr(10);
-    expect(cArr).toEqual([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+  test("makeCountArr() returns an array of zeroes with the inputted length", function () {
+    expect(makeCountArr(10)).toEqual([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
   });
 
-  test("first array sorted", function () {
-    let sortArr1 = countingSort(arr1);
-    expect(sortArr1).toEqual([0, 0, 1, 3, 6, 6, 6, 6, 7, 9]);
+  test("countingSort(): first array sorted", function () {
+    expect(countingSort(arr1)).toEqual([0, 0, 1, 3, 6, 6, 6, 6, 7, 9]);
   });
 
-  test("second array sorted", function () {
-    let sortArr2 = countingSort(arr2);
-    expect(sortArr2).toEqual([1, 2, 2, 3, 3, 4, 8]);
+  test("countingSort(): second array sorted", function () {
+    expect(countingSort(arr2)).toEqual([1, 2, 2, 3, 3, 4, 8]);
   });
 
-  test("third array sorted", function () {
-    let sortArr3 = countingSort(arr3);
-    expect(sortArr3).toEqual([
+  test("countingSort(): third array sorted", function () {
+    expect(countingSort(arr3)).toEqual([
       2, 3, 3, 4, 4, 4, 5, 23, 32, 32, 34, 34, 35, 43, 67, 75, 232, 232, 453,
       546, 4342,
     ]);

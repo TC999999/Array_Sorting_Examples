@@ -1,3 +1,5 @@
+// takes two arrays with sorted values and merges them together
+// while also sorting the alrady sorted values
 function merge(arr1, arr2) {
   let finalArr = [];
   let i = 0;
@@ -22,6 +24,8 @@ function merge(arr1, arr2) {
   return finalArr;
 }
 
+// recurseivly takes an unsorted array and breaks it apart and merges
+// back together while also sorting them. Returns newly sorted array
 function mergeSort(arr) {
   if (arr.length > 1) {
     let len = arr.length;
